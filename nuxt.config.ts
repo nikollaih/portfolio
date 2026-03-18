@@ -1,5 +1,3 @@
 export default defineNuxtConfig({
-    nitro: {
-        preset: 'static'
-    }
+    ssr: true,
 })
