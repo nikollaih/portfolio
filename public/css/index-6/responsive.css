@@ -33,6 +33,10 @@
 
 /* XL Device :1356px. */
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .about-image{
+    max-width: 488px;
+  }
+
   .slider-height {
     min-height: 100vh;
   }
@@ -130,6 +134,9 @@
   }
   .single-intro-feature-content {
     padding: 55px 46px 35px 46px;
+  }
+  .about-image{
+    max-width: 380px;
   }
 }
 
@@ -476,10 +483,16 @@
     bottom: 50px;
     left: -20px;
   }
+  .about-image{
+    max-width: 380px;
+  }
 }
 
 /* MD Device :768px. */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .about-image{
+    max-width: 100%;
+  }
   .sticky-menu .logo {
     margin: 15px 0;
   }
@@ -639,7 +652,11 @@
     margin-bottom: 110px;
   }
   .portfolio-area {
-    padding-bottom: 130px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+  .single-skill .circle-progress .vue3-circular-progressbar{
+    margin: 0 auto;
   }
   .marquee-w.mb-125 {
     margin-bottom: 75px;
@@ -656,15 +673,15 @@
     padding-bottom: 30px;
   }
   .fun-fact-area {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   .award-area {
     padding-top: 120px;
     padding-bottom: 125px;
   }
   .experience-area {
-    padding-bottom: 130px;
+    padding-bottom: 70px;
   }
   .education-area .theme-border-bottom {
     padding-top: 115px;
@@ -691,12 +708,12 @@
     padding-bottom: 100px;
   }
   .service-area {
-    padding-top: 85px;
-    padding-bottom: 105px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   .testimonial-bg {
-    padding-top: 120px;
-    padding-bottom: 130px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     background: #f5f4f4;
     position: static !important;
   }
@@ -704,7 +721,7 @@
     background: var(--section-bg);
   }
   .contact-area {
-    margin-top: 120px;
+    margin-top: 70px;
     margin-bottom: 0;
   }
   .contact-wrapper {
@@ -758,7 +775,13 @@
   }
   .experience-margin {
     padding-bottom: 0;
-    margin-top: 0;
+    margin-top: 70px;
+  }
+  .experience-margin .title, .education-area .title, .testimonial-area .title {
+    text-align: center;
+  }
+  .single-service .service-icon{
+    margin: 0 auto;
   }
   .award-margin {
     padding-bottom: 18px;
@@ -851,6 +874,15 @@
 
 /* Extra small Device. */
 @media screen and (max-width: 767px) {
+  .single-portfolio .port-category, .single-portfolio h3{
+    text-align: center;
+  }
+  .single-portfolio .open-portfolio-modal {
+    justify-content: center !important;
+  }
+  .about-image{
+    max-width: 100%;
+  }
   .slider-height {
     min-height: 800px;
   }
@@ -995,7 +1027,7 @@
     margin-bottom: 45px;
   }
   .slider-content h1, .slider-content h1 span {
-    font-size: 72px;
+    font-size: 60px;
     margin-bottom: 18px;
   }
   .slider-content span {
@@ -1239,7 +1271,7 @@
     margin-top: 110px;
   }
   .portfolio-area {
-    padding-top: 0;
+    padding-top: 70px;
     padding-bottom: 70px;
   }
   .row.portfolio {
@@ -1314,11 +1346,27 @@
   }
   .experience-margin {
     padding-bottom: 0;
-    margin-top: 0;
+    margin-top: 70px;
+  }
+  .experience-margin .title, .education-area .title, .testimonial-area .title {
+    text-align: center;
   }
   .experience-wrapper.extra-width {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .single-skill .circle-progress .vue3-circular-progressbar{
+    margin: 0 auto;
+  }
+  .single-service .service-icon{
+    margin: 0 auto;
+  }
+   .single-service .service-text{
+    text-align: center;
+   }
+   .single-service:hover .service-circle.service-large-circle {
+    bottom: 20px;
+    right: 20px;
   }
   .slider-bg-img {
     background-position: center;
@@ -1362,7 +1410,7 @@
   }
   .modal-content h2 {
     font-size: 24px;
-    padding: 35px 0px 18px 0px;
+    padding: 0px 0px 18px 0px;
   }
   .blog-meta {
     width: 100% !important;

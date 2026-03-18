@@ -1,5 +1,5 @@
 <template>
-  <div class="experience-area over-hidden pb-165">
+  <div class="experience-area over-hidden pb-140">
     <div class="experience-wrapper position-relative">
       <div
         class="experience-bg-img left-0 top-0 bottom-0 bg-cover no-repeat w-50 position-absolute grayscale"

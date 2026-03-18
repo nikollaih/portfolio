@@ -1,5 +1,5 @@
 <template>
-  <div id="work" class="portfolio-area over-hidden pb-165 pt-165">
+  <div id="work" class="portfolio-area over-hidden pb-70 pt-70">
     <div class="portfolio-wrapper position-relative mt--5">
       <div class="container">
         <div class="row">
@@ -34,13 +34,8 @@
               </div>
               <!-- /col -->
               <div
-                class="col-xl-5 col-lg-5 col-md-6 col-sm- col- d-flex justify-content-end align-items-center"
+                class="col-xl-5 col-lg-5 col-md-6 col-sm- col- d-flex justify-content-end align-items-center open-portfolio-modal"
               >
-                <img
-                  class="port-img position-absolute left-0 ml-xl-3 transition5"
-                  :src="item.img"
-                  alt="portfolio image 1"
-                />
                 <div
                   class="port-content text-center transition5 z-index11"
                   data-toggle="modal"
@@ -80,31 +75,39 @@ export default {
       items: [
         {
           id: 1,
-          title: "Software Design for codeefly",
-          category: "web design",
-          img: "/images/portfolio/port-img1.jpg",
-          largeImage: "images/portfolio/port-img1-large.jpg",
+          title: "Mobile Banking App",
+          category: "Mobile development",
+          client: "Diners",
+          type: "Fintech",
+          tasks: "Mobile & Web Development",
+          description: "Developed and maintained a mobile banking application focused on account management, secure transactions, and real-time financial operations. Built scalable and user-friendly interfaces using React Native, integrating secure APIs for handling sensitive financial data, and managing complex state across critical user flows such as transfers, payments, and authentication. Implemented wallet integrations with Apple Pay and Google Pay to enable seamless and secure payment experiences. Collaborated in optimizing performance, improving user experience in high-impact features, and ensuring reliability in transactional processes through robust validation and error handling."
         },
         {
           id: 2,
-          title: "Website Development for ABC Corporation",
-          category: "Development",
-          img: "/images/portfolio/port-img2.jpg",
-          largeImage: "images/portfolio/port-img2-large.jpg",
+          title: "Health Management Platform",
+          category: "Mobile Development",
+          client: "CareTree",
+          type: "Healthcare",
+          tasks: "Mobile Development",
+          description: "Contributed to the development of a healthcare management platform focused on care coordination, patient data centralization, and real-time communication between caregivers, families, and medical professionals. Built scalable front-end solutions to handle complex healthcare workflows such as patient profiles, medication tracking, scheduling, and activity feeds. Integrated secure APIs and leveraged Apple Health to retrieve and process vital health data, enabling real-time insights and improved monitoring. Implemented role-based access, optimized performance, and ensured reliable handling of sensitive health information across the platform."
         },
         {
           id: 3,
-          title: "Branding for Easy Computers",
-          category: "Branding",
-          img: "/images/portfolio/port-img3.jpg",
-          largeImage: "images/portfolio/port-img3-large.jpg",
+          title: "Operational Control Platform",
+          category: "Web Development",
+          client: "Nabbi",
+          type: "Logistics",
+          tasks: "Full Stack Development",
+          description: "Contributed to the development of an internal operational platform designed to manage product requirements, quotations, and approval workflows across multiple business units. Built scalable front-end solutions to handle complex business logic, including request lifecycle management, role-based approvals, and process tracking. Implemented features for managing quotations, operational requests, and multi-step approval flows, ensuring data consistency and traceability. Collaborated in optimizing performance for data-intensive views and improving overall efficiency by centralizing key operational processes into a single platform."
         },
         {
           id: 4,
-          title: "Security Analysis for codeefly",
-          category: "Photography",
-          img: "/images/portfolio/port-img4.jpg",
-          largeImage: "images/portfolio/port-img4-large.jpg",
+          title: "Smart Maintenance AI",
+          category: "Web development",
+          client: "",
+          type: "Property Management",
+          tasks: "Full Stack Development",
+          description: "Contributed to the development of a property management platform leveraging AI-driven email automation to handle tenant maintenance requests. Built front-end solutions to manage the full lifecycle of requests, from intake to resolution, including status tracking and user communication. Implemented intelligent workflows where incoming emails were automatically processed, enriched through iterative responses, and categorized using AI to identify the issue type and assign the most suitable contractor. Integrated human-in-the-loop validation to ensure accuracy before final approval, improving efficiency, scalability, and response times in maintenance operations."
         },
       ],
       toggle: false,

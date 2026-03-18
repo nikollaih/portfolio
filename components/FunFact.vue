@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fun-fact-area position-relative over-hidden pt-150 pb-120"
+    class="fun-fact-area position-relative over-hidden pt-70 pb-70"
     :class="containerCls"
     data-aos="fade-up"
     data-aos-duration="1800"
@@ -27,7 +27,7 @@
         </div>
         <!-- /col -->
 
-        <div class="col-xl-6 offset-xl-1 col-lg-6 col-md-12 col-sm- col-">
+        <div class="col-xl-7 col-lg-6 col-md-12 col-sm- col-">
           <div class="row justify-content-center align-items-center">
             <div
               class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-10"

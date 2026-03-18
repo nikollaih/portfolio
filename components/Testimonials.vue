@@ -1,7 +1,7 @@
 <template>
   <div class="testimonial-area position-relative over-hidden">
     <div class="container">
-      <div class="testimonial-bg section-bg pt-170 pb-170 position-relative">
+      <div class="testimonial-bg section-bg pt-70 pb-70 position-relative">
         <div class="row align-items-start justify-content-center">
           <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
             <div class="position-relative">

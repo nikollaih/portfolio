@@ -1,7 +1,7 @@
 <template>
   <div id="about" class="about-area over-hidden">
     <div
-      class="about-content-wrapper about-margin mt-170 mb-110 position-relative"
+      class="about-content-wrapper about-margin mt-70 mb-70 position-relative"
     >
       <div class="container">
         <div class="row justify-content-center">

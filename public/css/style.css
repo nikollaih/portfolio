@@ -1074,7 +1074,7 @@ span#main {
 }
 .modal-content h2 {
   font-size: 36px;
-  padding: 50px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
   line-height: 1.32;
 }
 .pro-modal-footer h6 {
@@ -1233,4 +1233,13 @@ span#main {
 /* .side-mobile-menu end*/
 .about-image{
   max-width: 480px;
+}
+.testi-avatar img {
+  width: 50px;
+}
+.single-service .service-icon{
+  margin: 0 auto;
+}
+.single-skill .circle-progress .vue3-circular-progressbar{
+  margin: 0 auto;
 }

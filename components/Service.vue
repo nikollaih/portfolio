@@ -1,5 +1,5 @@
 <template>
-  <div id="service" class="service-area over-hidden pt-160 pb-145" :class="bg">
+  <div id="service" class="service-area over-hidden pt-70 pb-70" :class="bg">
     <div class="service-wrapper position-relative">
       <div class="container">
         <div class="row align-items-start">
@@ -30,7 +30,7 @@
             >
               <div class="row">
                 <div
-                  class="col-xl-3 col-lg-3 col-md-6 col-sm-4 col-4 text-lg-center"
+                  class="col-xl-3 col-lg-3 col-md-6 col-sm-4 col-4 text-lg-center service-icon"
                 >
                   <div
                     class="service-ser-icon d-inline-block text-center position-relative mb-15"

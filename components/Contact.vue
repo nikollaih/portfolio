@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="contact-area over-hidden mb-160 mt-155">
+  <div id="contact" class="contact-area over-hidden mb-70 mt-70">
     <div id="hero-btn" class="contact-wrapper position-relative">
       <div class="container">
         <div class="row align-items-start">

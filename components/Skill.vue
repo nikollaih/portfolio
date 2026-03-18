@@ -1,7 +1,7 @@
 <template>
   <div
     id="skills"
-    class="skill-area over-hidden position-relative pt-130 pb-110"
+    class="skill-area over-hidden position-relative pt-140 pb-140"
   >
     <div class="marquee-w mb-125">
       <div class="marquee">
@@ -20,7 +20,7 @@
 
     <div class="container">
       <div class="row align-items-start justify-content-center">
-        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+        <div class="col-xl-5 col-md-12 col-sm-12 col-12">
           <div class="position-relative">
             <div class="title mb-50">
               <span class="theme-color text-uppercase d-block mb-6"
@@ -35,7 +35,7 @@
         </div>
 
         <div
-          class="col-xl-6 col-lg-7 offset-xl-1 col-md-12 col-sm-12 col-12"
+          class="col-xl-6 offset-xl-1 col-md-12 col-sm-12 col-12"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1400"

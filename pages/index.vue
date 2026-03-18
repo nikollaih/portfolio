@@ -116,7 +116,7 @@ useHead({
     { rel: "stylesheet", href: "/css/style.css" },
     { rel: "stylesheet", href: "/css/index-6/default.css" },
     { rel: "stylesheet", href: "/css/index-6/style.css" },
-    { rel: "stylesheet", href: "/css/responsive.css" },
+    { rel: "stylesheet", href: "/css/index-6/responsive.css" },
   ],
 });
 definePageMeta({
