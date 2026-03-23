@@ -131,6 +131,9 @@ const deferredCss = [
 useHead({
   link: [
     ...(canonicalUrl ? [{ rel: "canonical", href: canonicalUrl }] : []),
+    // Preload fuente crítica – el browser la descarga en paralelo con los CSS,
+    // evitando la cadena HTML → CSS → fuente
+    { rel: "preload", href: "/fonts/jost-medium-font/jost-medium.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" },
     // CSS crítico – bloquea render pero es necesario para el layout inicial
     { rel: "stylesheet", href: "/css/bootstrap.min.css" },
     { rel: "stylesheet", href: "/css/global.css" },
