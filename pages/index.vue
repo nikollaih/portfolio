@@ -9,7 +9,7 @@
     <div id="home" class="slider-area slider-bg-color over-hidden dvh-100">
       <div
         class="single-slider slider-height over-hidden position-relative xxl-device-width bg-cover no-repeat"
-        data-background="/images/slider/slider-bg.jpg"
+        data-background="/images/slider/slider-bg.webp"
       >
         <div id="scene" class="parallax position-absolute w-100 dvh-100 z-index1">
           <img

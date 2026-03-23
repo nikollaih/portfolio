@@ -126,7 +126,7 @@ export default {
   props: {
     bgImage: {
       type: String,
-      default: "/images/slider/slider-bg.jpg",
+      default: "/images/slider/slider-bg.webp",
     },
   },
 };
