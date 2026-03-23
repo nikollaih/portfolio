@@ -94,8 +94,32 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
+const siteUrl = config.public.siteUrl?.replace(/\/$/, "") || "";
+const pageTitle = "Nikollai Hernández | Frontend Developer";
+const pageDescription = "Portfolio of Nikollai Hernández, software engineer and web developer building scalable applications, intuitive user experiences, and high-performance digital products.";
+const socialImage = "/images/slider/person.png";
+const socialImageUrl = siteUrl ? new URL(socialImage, siteUrl).toString() : undefined;
+const canonicalUrl = siteUrl ? new URL("/", siteUrl).toString() : undefined;
+
+useSeoMeta({
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogType: "website",
+  ogUrl: canonicalUrl,
+  ogImage: socialImageUrl,
+  ogImageAlt: "Nikollai Hernández portfolio preview",
+  twitterCard: "summary_large_image",
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription,
+  twitterImage: socialImageUrl,
+});
+
 useHead({
   link: [
+    ...(canonicalUrl ? [{ rel: "canonical", href: canonicalUrl }] : []),
     { rel: "stylesheet", href: "/css/animate.css" },
     { rel: "stylesheet", href: "/css/bootstrap.min.css" },
     { rel: "stylesheet", href: "/css/chart.css" },
@@ -108,6 +132,24 @@ useHead({
     { rel: "stylesheet", href: "/css/index-6/default.css" },
     { rel: "stylesheet", href: "/css/index-6/style.css" },
     { rel: "stylesheet", href: "/css/index-6/responsive.css" },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Nikollai Hernández",
+        jobTitle: "Frontend Developer",
+        description: pageDescription,
+        url: canonicalUrl,
+        image: socialImageUrl,
+        sameAs: [
+          "https://github.com/nikollaih",
+          "https://www.linkedin.com/in/nikollai-hernandez-033690129/",
+        ],
+      }),
+    },
   ],
 });
 definePageMeta({
