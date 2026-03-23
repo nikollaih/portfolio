@@ -117,21 +117,29 @@ useSeoMeta({
   twitterImage: socialImageUrl,
 });
 
+// CSS no-crítico que se aplica en mounted() — se preloaded aquí para que
+// el browser empiece a descargar antes de que Vue hidrate.
+const deferredCss = [
+  "/css/animate.css",
+  "/css/flaticon.css",
+  "/css/fontawesome-all.min.css",
+  "/css/slick.css",
+  "/css/meanmenu.css",
+  "/css/chart.css",
+];
+
 useHead({
   link: [
     ...(canonicalUrl ? [{ rel: "canonical", href: canonicalUrl }] : []),
-    { rel: "stylesheet", href: "/css/animate.css" },
+    // CSS crítico – bloquea render pero es necesario para el layout inicial
     { rel: "stylesheet", href: "/css/bootstrap.min.css" },
-    { rel: "stylesheet", href: "/css/chart.css" },
-    { rel: "stylesheet", href: "/css/flaticon.css" },
-    { rel: "stylesheet", href: "/css/fontawesome-all.min.css" },
     { rel: "stylesheet", href: "/css/global.css" },
-    { rel: "stylesheet", href: "/css/meanmenu.css" },
-    { rel: "stylesheet", href: "/css/slick.css" },
     { rel: "stylesheet", href: "/css/style.css" },
     { rel: "stylesheet", href: "/css/index-6/default.css" },
     { rel: "stylesheet", href: "/css/index-6/style.css" },
     { rel: "stylesheet", href: "/css/index-6/responsive.css" },
+    // Preload hints – el browser descarga en paralelo sin bloquear render
+    ...deferredCss.map((href) => ({ rel: "preload", href, as: "style" })),
   ],
   script: [
     {
@@ -163,6 +171,22 @@ export default {
   mounted() {
     TyperSetup();
     document.querySelector("body").classList.add("body-dark-mode");
+
+    // Aplicar CSS no-crítico como stylesheet (ya descargados por el preload)
+    const deferredCss = [
+      "/css/animate.css",
+      "/css/flaticon.css",
+      "/css/fontawesome-all.min.css",
+      "/css/slick.css",
+      "/css/meanmenu.css",
+      "/css/chart.css",
+    ];
+    deferredCss.forEach((href) => {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = href;
+      document.head.appendChild(link);
+    });
   },
   data() {
     return {
