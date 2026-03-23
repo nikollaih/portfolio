@@ -16,7 +16,7 @@
         </div>
         <!-- /row -->
         <div class="row">
-          <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-12">
+          <div class="col-md-12 col-sm-12 col-12">
             <div class="contact-wrapper mt-70">
               <ul class="contact-info-content">
                 <li
@@ -84,114 +84,6 @@
             <!-- /contact-wrapper -->
           </div>
           <!-- /col -->
-          <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12">
-            <div class="contact-wrapper">
-              <div class="contact-form mt-45">
-                <form action="php/mail.php" method="POST" id="contact-form">
-                  <div class="contact-info pt-20">
-                    <div class="row">
-                      <div
-                        class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pr6 mb-12"
-                        data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom"
-                        data-aos-duration="2000"
-                      >
-                        <input
-                          class="name w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 openS-font-family"
-                          type="text"
-                          name="inputName"
-                          id="inputName"
-                          placeholder="Your Name"
-                        />
-                        <!-- /name -->
-                      </div>
-                      <!-- /col -->
-                      <div
-                        class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pl6 pr-12 mb-12"
-                        data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom"
-                        data-aos-duration="2500"
-                      >
-                        <input
-                          class="email w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 openS-font-family"
-                          type="email"
-                          name="inputEmail"
-                          id="inputEmail"
-                          placeholder="Your Email"
-                        />
-                        <!-- /email -->
-                      </div>
-                      <!-- /col -->
-                      <div
-                        class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pr6 mb-12"
-                        data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom"
-                        data-aos-duration="2000"
-                      >
-                        <input
-                          class="phone w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 openS-font-family"
-                          type="text"
-                          name="inputPhone"
-                          id="inputPhone"
-                          placeholder="Your Phone"
-                        />
-                        <!-- /phone -->
-                      </div>
-                      <!-- /col -->
-                      <div
-                        class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pl6 pr-12 mb-12"
-                        data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom"
-                        data-aos-duration="2500"
-                      >
-                        <input
-                          class="subject w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 openS-font-family"
-                          type="text"
-                          name="inputSubject"
-                          id="inputSubject"
-                          placeholder="Your Subject"
-                        />
-                        <!-- /subject -->
-                      </div>
-                      <!-- /col -->
-                    </div>
-                    <!-- /row -->
-                    <div class="row">
-                      <div
-                        class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pl-12 pr-12 mb-12"
-                        data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom"
-                        data-aos-duration="2000"
-                      >
-                        <textarea
-                          class="massage w-100 theme-border pl-20 pt-15 pr-10 primary-color border-radius5 openS-font-family"
-                          name="inputMessage"
-                          id="inputMessage"
-                          placeholder="Start writing message here"
-                        ></textarea>
-                      </div>
-                      <!-- /col -->
-                    </div>
-                    <!-- /row -->
-                    <button
-                      class="btn position-relative over-hidden text-white d-inline-block theme-bg white-text text-uppercase"
-                      type="submit"
-                      name="submit"
-                      data-aos="fade-up"
-                      data-aos-anchor-placement="top-bottom"
-                      data-aos-duration="2500"
-                    >
-                      Submit Now
-                    </button>
-                  </div>
-                </form>
-                <p class="form-message mt-20"></p>
-              </div>
-              <!-- /contact-form -->
-            </div>
-            <!-- /contact-wrapper -->
-          </div>
-          <!-- /col -->
         </div>
         <!-- /row -->
       </div>
@@ -200,3 +92,40 @@
     <!-- /contact-wrapper -->
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      formMessage: '',
+    };
+  },
+  methods: {
+    async sendContactForm(e) {
+      const form = e.target;
+      const data = {
+        inputName: form.inputName.value,
+        inputEmail: form.inputEmail.value,
+        inputPhone: form.inputPhone.value,
+        inputSubject: form.inputSubject.value,
+        inputMessage: form.inputMessage.value,
+      };
+      try {
+        const res = await fetch('https://function-bun-production-3770.up.railway.app/send-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        if (res.ok) {
+          this.formMessage = 'Mensaje enviado correctamente.';
+          form.reset();
+        } else {
+          this.formMessage = 'Hubo un error al enviar el mensaje.';
+        }
+      } catch (err) {
+        this.formMessage = 'Error de conexión.';
+      }
+    },
+  },
+};
+</script>

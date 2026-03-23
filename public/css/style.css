@@ -1236,6 +1236,7 @@ span#main {
 }
 .testi-avatar img {
   width: 50px;
+  background: #dadada;
 }
 .single-service .service-icon{
   margin: 0 auto;

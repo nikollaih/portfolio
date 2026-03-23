@@ -30,7 +30,7 @@
                   <h4>
                     Pontificia Universidad Javeriana
                     <span class="meta-text-color openS-font-family">
-                      ( 2026 )</span
+                      2026</span
                     >
                   </h4>
                 </div>
@@ -51,28 +51,7 @@
                   <h4>
                     Politécnico Grancolombiano
                     <span class="meta-text-color openS-font-family">
-                      ( 2023 )</span
-                    >
-                  </h4>
-                </div>
-              </li>
-              <li class="mb-32 d-flex align-items-start rotate-hover">
-                <div
-                    class="experience-ser-icon d-inline-block text-center mt-10 mr-30 transition3"
-                >
-                  <span class="theme-color d-inline-block">
-                    <span
-                        class="d-block rotate flat-family flaticon-graduation-cap"
-                    ></span>
-                  </span>
-                </div>
-                <!-- /education-ser-icon -->
-                <div class="experience-service-text d-inline-block">
-                  <h3 class="mb-2">English Certification B2</h3>
-                  <h4>
-                    American School Way
-                    <span class="meta-text-color openS-font-family">
-                      ( 2023 )</span
+                      2023</span
                     >
                   </h4>
                 </div>
@@ -93,7 +72,7 @@
                   <h4>
                     SENA
                     <span class="meta-text-color openS-font-family">
-                      ( 2014 )</span
+                      2015</span
                     >
                   </h4>
                 </div>

@@ -21,6 +21,9 @@
     max-width: 2300px;
     margin: 0 auto;
   }
+  .mt-lg-60 {
+    margin-top: 60px !important;
+  }
 }
 
 /* XL Device :1920px. */
@@ -85,6 +88,9 @@
   .slider-social-link .social {
     padding-right: 48px;
   }
+  .mt-lg-60 {
+    margin-top: 60px !important;
+  }
 }
 
 /* XL Device :1280px. */
@@ -138,10 +144,22 @@
   .about-image{
     max-width: 380px;
   }
+  .mt-lg-60 {
+    margin-top: 60px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mt-lg-60 {
+    margin-top: 60px !important;
+  }
 }
 
 /* LG Device :992px. */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  .mt-lg-60 {
+    margin-top: 60px !important;
+  }
   .slider-height {
     min-height: 650px;
   }
@@ -1022,7 +1040,7 @@
     margin: 12px 0;
   }
   .slider-content {
-    margin-top: 100px;
+    margin-top: 0;
     padding-right: 0;
     margin-bottom: 45px;
   }

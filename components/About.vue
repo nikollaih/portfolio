@@ -104,13 +104,13 @@
                   <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 col-12">
                     <ul class="about-info d-flex">
                       <li class="d-inline-block pr-50">
-                        <p class="jostMedium-font-family mb-6">Phone</p>
+                        <p class="jostMedium-font-family mb-6">Language</p>
                         <p class="jostMedium-font-family mb-6">Email</p>
                         <p class="jostMedium-font-family mb-6">Nationality</p>
                       </li>
                       <!-- /li -->
                       <li class="d-inline-block">
-                        <p class="mb-6">+57 321 833 5089</p>
+                        <p class="mb-6">Spanish / English</p>
                         <p class="mb-6">nikollaihernandez@gmail.com</p>
                         <p class="mb-6">Colombia</p>
                       </li>

@@ -6,12 +6,12 @@
     :footerLogo="'/images/index-6/logo-dark.png'"
     :copyRightTextColor="'theme-color'"
   >
-    <div id="home" class="slider-area slider-bg-color over-hidden">
+    <div id="home" class="slider-area slider-bg-color over-hidden dvh-100">
       <div
         class="single-slider slider-height over-hidden position-relative xxl-device-width bg-cover no-repeat"
         data-background="/images/slider/slider-bg.jpg"
       >
-        <div id="scene" class="parallax position-absolute w-100 h-100 z-index1">
+        <div id="scene" class="parallax position-absolute w-100 dvh-100 z-index1">
           <img
             data-depth="0.20"
             class="hero-shape hero-shape1 position-absolute d-none d-lg-inline-block"
@@ -38,7 +38,7 @@
           />
         </div>
         <div
-          class="container slider-height d-flex align-items-center justify-content-center"
+          class="container slider-height d-flex align-items-center justify-content-center dvh-100"
         >
           <div class="row justify-content-center align-items-center h-100">
             <div class="col-12 d-flex align-items-center justify-content-center">
@@ -65,8 +65,6 @@
                     <span class="cursor primary-color d-inline-block" data-owner="main"></span>
                   </span>
                 </h2>
-                <a href="#contact" class="btn position-relative over-hidden theme-bg text-uppercase transition5 mr-3">Say Hello</a>
-                <a href="#about" class="btn position-relative over-hidden bg-transparent main-border text-uppercase transition5">About Me</a>
               </div>
             </div>
           </div>
@@ -74,16 +72,10 @@
         <div class="slider-social-link position-absolute right-0 d-none d-md-block z-index11">
           <ul class="social pr-60">
             <li class="mt-10 mb-10 rotate-hover">
-              <a class="text-center d-inline-block rotate" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="text-center d-inline-block rotate" href="https://github.com/nikollaih" target="_blank"><i class="fab fa-github"></i></a>
             </li>
             <li class="mt-10 mb-10 rotate-hover">
-              <a class="text-center d-inline-block rotate" href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="mt-10 mb-10 rotate-hover">
-              <a class="text-center d-inline-block rotate" href="#"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li class="mt-10 mb-10 rotate-hover">
-              <a class="text-center d-inline-block rotate" href="#"><i class="fab fa-youtube"></i></a>
+              <a class="text-center d-inline-block rotate" href="https://www.linkedin.com/in/nikollai-hernandez-033690129/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </li>
           </ul>
         </div>
@@ -98,7 +90,6 @@
     <Skill :fill-color="'#9B9DB1'" />
     <Service :bg="'theme-bg'" :itemBg="'white-bg'" />
     <Testimonials :testimonialIcon="'/images/icon/testimonial-icon.png'" />
-    <Contact />
   </NuxtLayout>
 </template>
 

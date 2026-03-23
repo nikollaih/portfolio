@@ -12,7 +12,7 @@
             class="single-intro-feature-content border-radius10 transition5 mb-30"
             data-tilt
             data-tilt-max="10"
-            :class="`${cardExtraCls} ${item.marginTop ? 'mt-60' : ''}`"
+            :class="`${cardExtraCls} ${item.marginTop ? 'mt-lg-60' : ''}`"
           >
             <div class="intro-ft-icon d-inline-block mb-30 transition5">
               <img :src="item.icon" alt="icon1" />

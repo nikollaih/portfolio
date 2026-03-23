@@ -32,13 +32,6 @@
                 <ul class="social social-bg text-center d-flex">
                   <li class="mr-2 rotate-hover">
                     <a
-                      class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate"
-                      href="#"
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                  </li>
-                  <li class="mr-2 rotate-hover">
-                    <a
                       class="twitter-bg text-center pr-0 text-white d-block rotate transition-3"
                       href="#"
                       ><i class="fab fa-twitter"></i
@@ -49,13 +42,6 @@
                       class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3"
                       href="#"
                       ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </li>
-                  <li class="mr-2 rotate-hover">
-                    <a
-                      class="instagram-bg text-center pr-0 text-white d-block rotate transition-3"
-                      href="#"
-                      ><i class="fab fa-instagram"></i
                     ></a>
                   </li>
                 </ul>

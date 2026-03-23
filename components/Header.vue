@@ -33,12 +33,6 @@
                     <li>
                       <a href="#service">service</a>
                     </li>
-                    <li>
-                      <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                      <a href="#blog">Blog</a>
-                    </li>
                   </ul>
                 </nav>
               </div>
@@ -55,7 +49,7 @@
               <div class="mobile-m-bar d-block d-lg-none ml-30">
                 <a
                   @click="toggle = !toggle"
-                  class="mobile-menubar theme-color primary-hover"
+                  class="mobile-menubar text-white primary-hover"
                   href="javascript:void(0);"
                   ><i class="far fa-bars"></i
                 ></a>
@@ -104,12 +98,6 @@
             <li>
               <a href="#service">service</a>
             </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <li class="mean-last">
-              <a href="#blog">Blog</a>
-            </li>
           </ul>
         </nav>
       </div>
@@ -120,30 +108,18 @@
     <ul class="social social-bg text-center d-flex mt-10 ml-3">
       <li class="mr-2 rotate-hover">
         <a
-          class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate"
-          href="#"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-      </li>
-      <li class="mr-2 rotate-hover">
-        <a
-          class="twitter-bg text-center pr-0 text-white d-block rotate transition-3"
-          href="#"
-          ><i class="fab fa-twitter"></i
+          class="github-bg text-center pr-0 text-white d-block rotate transition-3"
+          href="https://github.com/nikollaih"
+          target="_blank"
+          ><i class="fab fa-github"></i
         ></a>
       </li>
       <li class="mr-2 rotate-hover">
         <a
           class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3"
-          href="#"
+          href="https://www.linkedin.com/in/nikollai-hernandez-033690129/"
+          target="_blank"
           ><i class="fab fa-linkedin-in"></i
-        ></a>
-      </li>
-      <li class="mr-2 rotate-hover">
-        <a
-          class="instagram-bg text-center pr-0 text-white d-block rotate transition-3"
-          href="#"
-          ><i class="fab fa-instagram"></i
         ></a>
       </li>
     </ul>

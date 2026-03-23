@@ -1,10 +1,10 @@
 <template>
-  <div id="home" class="slider-area slider-bg-color over-hidden">
+  <div id="home" class="slider-area slider-bg-color over-hidden dvh-100">
     <div
       class="single-slider slider-height over-hidden position-relative xxl-device-width bg-cover no-repeat"
       :data-background="bgImage"
     >
-      <div id="scene" class="parallax position-absolute w-100 h-100 z-index1">
+      <div id="scene" class="parallax position-absolute w-100 vh-100 z-index1">
         <img
           data-depth="0.20"
           class="hero-shape hero-shape1 position-absolute d-none d-lg-inline-block"
@@ -67,11 +67,6 @@
                     ></span>
                   </span>
                 </h2>
-                <a
-                  href="#hero-btn"
-                  class="btn position-relative over-hidden theme-bg text-uppercase transition5"
-                  >Say Hello</a
-                >
               </div>
               <!-- /slider-content -->
             </div>

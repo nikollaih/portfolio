@@ -1252,3 +1252,6 @@ span#main {
   background: var(--main-color);
 }
 /* .side-mobile-menu end*/
+.dvh-100 {
+  height: 100dvh !important;
+}

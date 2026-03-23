@@ -76,9 +76,9 @@ export default {
   data() {
     return {
       skills: [
-        { id: 1, title: "Frontend Development", value: 95 },
+        { id: 1, title: "Front-end Development", value: 95 },
         { id: 2, title: "Mobile Development", value: 90 },
-        { id: 3, title: "Software Development", value: 80 },
+        { id: 3, title: "Back-end Development", value: 70 },
         { id: 4, title: "API Integration", value: 85 },
         { id: 5, title: "System Architecture", value: 80 },
         { id: 6, title: "Agile Development", value: 85 },
