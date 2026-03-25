@@ -30,6 +30,12 @@ export default defineNuxtConfig({
                 { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
                 { rel: "apple-touch-icon", href: "/images/index-6/favicon.png" },
             ],
+            script: [
+                {
+                    src: 'https://www.googletagmanager.com/gtag/js?id=G-1223BR337L',
+                    async: true
+                }
+            ]
         },
     },
 })
