@@ -1,10 +1,5 @@
 export default defineNuxtConfig({
-    modules: ['@nuxtjs/google-gtag'],
-    gtag: {
-        id: 'G-1223BR337L'
-    },
     ssr: true,
-
     nitro: {
         preset: "static",
     },
