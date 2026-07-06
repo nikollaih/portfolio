@@ -72,6 +72,7 @@
                     <h4 class="mb-2">Email</h4>
                     <p class="mb-0">
                       <a class="text-color primary-hover d-block" href="mailto:nikollaihernandez@gmail.com"
+                        @click="trackContactClick('email')"
                         >nikollaihernandez@gmail.com</a
                       >
                     </p>
@@ -94,6 +95,8 @@
 </template>
 
 <script>
+import { trackEvent } from "../utils/analytics.js";
+
 export default {
   data() {
     return {
@@ -101,6 +104,9 @@ export default {
     };
   },
   methods: {
+    trackContactClick(method) {
+      trackEvent("contact_click", { method });
+    },
     async sendContactForm(e) {
       const form = e.target;
       const data = {

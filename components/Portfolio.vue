@@ -69,6 +69,8 @@
 </template>
 
 <script>
+import { trackEvent } from "../utils/analytics.js";
+
 export default {
   data() {
     return {
@@ -119,6 +121,7 @@ export default {
       this.toggle = true;
       this.item = item;
       document.querySelector("body").classList.add("modal-open");
+      trackEvent("view_project", { project: item.title });
     },
     close() {
       this.toggle = false;

@@ -72,10 +72,10 @@
         <div class="slider-social-link position-absolute right-0 d-none d-md-block z-index11">
           <ul class="social pr-60">
             <li class="mt-10 mb-10 rotate-hover">
-              <a class="text-center d-inline-block rotate" href="https://github.com/nikollaih" target="_blank"><i class="fab fa-github"></i></a>
+              <a class="text-center d-inline-block rotate" href="https://github.com/nikollaih" target="_blank" @click="trackSocialClick('github')"><i class="fab fa-github"></i></a>
             </li>
             <li class="mt-10 mb-10 rotate-hover">
-              <a class="text-center d-inline-block rotate" href="https://www.linkedin.com/in/nikollai-hernandez-033690129/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a class="text-center d-inline-block rotate" href="https://www.linkedin.com/in/nikollai-hernandez-033690129/" target="_blank" @click="trackSocialClick('linkedin')"><i class="fab fa-linkedin-in"></i></a>
             </li>
           </ul>
         </div>
@@ -170,7 +170,13 @@ definePageMeta({
 
 <script>
 import { TyperSetup } from "../utils/typer.js";
+import { trackEvent } from "../utils/analytics.js";
 export default {
+  methods: {
+    trackSocialClick(network) {
+      trackEvent("social_click", { network });
+    },
+  },
   mounted() {
     TyperSetup();
     document.querySelector("body").classList.add("body-dark-mode");
