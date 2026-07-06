@@ -891,6 +891,14 @@
 }
 
 /* Extra small Device. */
+@media screen and (max-width: 991px) {
+  .experience-bg-img {
+    display: none;
+  }
+  .education-img {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .single-portfolio .port-category, .single-portfolio h3{
     text-align: center;

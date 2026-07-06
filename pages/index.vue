@@ -60,7 +60,7 @@
                       id="main"
                       data-words="Software Engineer, Web & App Developer, Freelancer"
                       data-delay="100"
-                      data-colors="#25262f"
+                      data-colors="#4c6ef5"
                     ></span>
                     <span class="cursor primary-color d-inline-block" data-owner="main"></span>
                   </span>
@@ -88,8 +88,7 @@
     <Experience />
     <Education />
     <Skill :fill-color="'#9B9DB1'" />
-    <Service :bg="'theme-bg'" :itemBg="'white-bg'" />
-    <Testimonials :testimonialIcon="'/images/icon/testimonial-icon.png'" />
+    <Service :bg="'dark-bg'" :itemBg="'white-bg'" />
   </NuxtLayout>
 </template>
 
@@ -141,6 +140,7 @@ useHead({
     { rel: "stylesheet", href: "/css/index-6/default.css" },
     { rel: "stylesheet", href: "/css/index-6/style.css" },
     { rel: "stylesheet", href: "/css/index-6/responsive.css" },
+    { rel: "stylesheet", href: "/css/theme-accent.css" },
     // Preload hints – el browser descarga en paralelo sin bloquear render
     ...deferredCss.map((href) => ({ rel: "preload", href, as: "style" })),
   ],

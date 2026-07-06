@@ -88,7 +88,7 @@ export default {
   props: {
     fillColor: {
       type: String,
-      default: "#80db66",
+      default: "#0f637c",
     },
     textColor: {
       type: String,

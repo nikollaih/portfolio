@@ -42,7 +42,7 @@
 /* common css */
 :root {
   --main-color: #80db66;
-  --primary-color: #25262f;
+  --primary-color: #fff;
   --secondary-color: #e2ecf6;
   --text-color: #4d4d5c;
   --meta-text-color: #9b9db1;
@@ -454,7 +454,7 @@ a:hover,
   display: block;
 }
 .sticky-menu .header {
-  background: #25262f;
+  background: var(--primary-color);
   -webkit-box-shadow: 0 8px 4px -7px rgba(115, 115, 115, 0.1);
   -moz-box-shadow: 0 8px 4px -7px rgba(115, 115, 115, 0.1);
   box-shadow: 0 8px 4px -7px rgba(115, 115, 115, 0.1);

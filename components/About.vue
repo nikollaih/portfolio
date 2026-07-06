@@ -22,7 +22,7 @@
                     data-tilt-max="10"
                   >
                     <img
-                      class="border-radius10 position-relative z-index11 p-2 bg-dark grayscale about-image"
+                      class="border-radius10 position-relative z-index11 p-2 bg-dark about-image"
                       src="/images/about/about-img.jpg"
                       alt="Nikollai Hernandez"
                     />

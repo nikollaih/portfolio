@@ -1,0 +1,19 @@
+/*
+  Accent color override.
+  The Thames template ships with --main-color redefined to near-black (#25262f)
+  in css/index-6/style.css, which flattens every accent (buttons, hovers,
+  borders, section-title underlines, icons) to grayscale. This file loads
+  after the template stylesheets and restores a real accent color across
+  the same variable so the override reaches every component automatically.
+*/
+:root {
+  --main-color: #0f637c;
+}
+
+.slider-content .cursor.primary-color, h2 {
+  color: var(--main-color);
+}
+
+span.theme-color {
+  color: #888888
+}
