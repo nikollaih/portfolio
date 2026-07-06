@@ -27,8 +27,17 @@ export default defineNuxtConfig({
             ],
             script: [
                 {
-                    src: 'https://www.googletagmanager.com/gtag/js?id=G-1223BR337L',
+                    src: 'https://www.googletagmanager.com/gtag/js?id=G-Q156H034SV',
                     async: true
+                },
+                {
+                    children: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){ dataLayer.push(arguments); }
+                        window.gtag = gtag;
+                        gtag('js', new Date());
+                        gtag('config', 'G-Q156H034SV');
+                    `
                 }
             ]
         },

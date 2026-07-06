@@ -50,7 +50,7 @@
                       src="/images/about/download-bg.png"
                       alt="about image 2"
                     />
-                    <a target="_blank" href="https://drive.google.com/file/d/1QxkG1AVbcbUj9cXdVWliBXQlxSM9CDru/view?usp=drive_link" class="cv-download-link transition5">
+                    <a target="_blank" href="https://drive.google.com/file/d/1QxkG1AVbcbUj9cXdVWliBXQlxSM9CDru/view?usp=drive_link" class="cv-download-link transition5" @click="trackCvDownload('about')">
                       <img
                         class="d-icon d-inline-block position-absolute"
                         src="/images/icon/download-icon.png"
@@ -145,11 +145,18 @@
   </div>
 </template>
 <script>
+import { trackEvent } from "../utils/analytics.js";
+
 export default {
   props: {
     signature: {
       type: String,
       default: "/images/about/signature.png",
+    },
+  },
+  methods: {
+    trackCvDownload(source) {
+      trackEvent("download_cv", { source });
     },
   },
 };

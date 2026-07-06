@@ -42,6 +42,7 @@
                   href="https://drive.google.com/file/d/1QxkG1AVbcbUj9cXdVWliBXQlxSM9CDru/view?usp=drive_link"
                   target="_blank"
                   class="white-text text-uppercase d-inline-block f-700"
+                  @click="trackCvDownload('header')"
                   >download cv</a
                 >
               </div>
@@ -135,6 +136,8 @@
 </template>
 
 <script>
+import { trackEvent } from "../utils/analytics.js";
+
 export default {
   data() {
     return {
@@ -143,6 +146,11 @@ export default {
   },
   mounted() {
     thamesUtils.stickyNav();
+  },
+  methods: {
+    trackCvDownload(source) {
+      trackEvent("download_cv", { source });
+    },
   },
   props: {
     logo: {
