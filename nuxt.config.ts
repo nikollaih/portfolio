@@ -27,7 +27,7 @@ export default defineNuxtConfig({
             ],
             script: [
                 {
-                    src: 'https://www.googletagmanager.com/gtag/js?id=G-Q156H034SV',
+                    src: 'https://www.googletagmanager.com/gtag/js?id=G-1223BR337L',
                     async: true
                 },
                 {
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
                         function gtag(){ dataLayer.push(arguments); }
                         window.gtag = gtag;
                         gtag('js', new Date());
-                        gtag('config', 'G-Q156H034SV');
+                        gtag('config', 'G-1223BR337L');
                     `
                 }
             ]
